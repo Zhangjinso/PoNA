@@ -33,7 +33,6 @@ print(model.training)
 opt.how_many = 999999
 fps = 0
 num = 0
-# test
 for i, data in enumerate(dataset):
     print(' process %d/%d img ..'%(i,opt.how_many))
     if i >= opt.how_many:
@@ -50,10 +49,7 @@ for i, data in enumerate(dataset):
     img_path = [img_path]
     print(img_path)
     visualizer.save_images(webpage, visuals, img_path)
-print(fps)
-print(num)
-#print(fps/num)
-webpage.save()
+
 
 
 
