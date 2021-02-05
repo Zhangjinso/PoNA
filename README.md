@@ -29,7 +29,7 @@ Here is the results（**[baidu](https://pan.baidu.com/s/1o8nK0wrrFcvEsUbzHtOHJQ)
 
 Checkpoint of DeepFashion is [here](https://pan.baidu.com/s/1YjkcA-P99cWMMfrB_Vw5Yw ) (fetch code: abcd). You can test by yourself. 
 
-<u>Note that the Checkpoint of Market1501 is lost due to COVID-19 and the architecture is a little difference compared with DeepFashion. We will release as soon as possible.</u>
+<u>Note that the Checkpoint of Market1501 is lost due to COVID-19 and the architecture is a little difference compared with DeepFashion. We will release it as soon as possible.</u>
 
 ```python
 #fashion
