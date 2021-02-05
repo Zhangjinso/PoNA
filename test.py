@@ -31,23 +31,15 @@ model = model.eval()
 print(model.training)
 
 opt.how_many = 999999
-fps = 0
-num = 0
 for i, data in enumerate(dataset):
     print(' process %d/%d img ..'%(i,opt.how_many))
     if i >= opt.how_many:
         break
     model.set_input(data)
-    startTime = time.time()
     model.test()
-    endTime = time.time()
-    fps += endTime-startTime
-    num += 1
-    print(endTime-startTime)
     visuals = model.get_current_visuals()
     img_path = model.get_image_paths()
     img_path = [img_path]
-    print(img_path)
     visualizer.save_images(webpage, visuals, img_path)
 
 
